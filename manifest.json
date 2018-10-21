@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "My Dank Extension",
+    "description": "Replace all Instances of Kavanaugh w/ Dranky Spanky",
+    "version": "1.0",
+    "permissions" : ["fontSettings"],
+    "content_scripts": [
+                        {
+                        "matches": [
+                                    "*://*/*"
+                                    ],
+                        "js": [
+                               "content.js"
+                               ],
+                        "run_at": "document_end"
+                        }
+                        ]
+}
+
